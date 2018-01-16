@@ -10,8 +10,8 @@ LABEL build_version="Romancin version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 # package version
 ARG MEDIAINF_VER="17.12"
-ARG RTORRENT_VER="0.9.6"
-ARG LIBTORRENT_VER="0.13.6"
+ARG RTORRENT_VER="0.9.4"
+ARG LIBTORRENT_VER="0.13.4"
 ARG CURL_VER="7.57.0"
 
 # set env
@@ -194,5 +194,5 @@ wget -qO- https://github.com/rakshasa/rtorrent/archive/${RTORRENT_VER}.tar.gz | 
 COPY root/ /
 
 # ports and volumes
-EXPOSE 443 51415 3000
+EXPOSE 443 51415
 VOLUME /config /downloads
