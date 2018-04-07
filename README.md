@@ -41,7 +41,7 @@ In order to change rutorrent web access password execute this inside container:
 Sample run command:
 
 For rtorrent 0.9.6 version: \
-\
+
 ```bash
 docker run -d --name=rutorrent \
 -v /share/Container/rutorrent-docker/config:/config \
@@ -53,7 +53,7 @@ romancin/rutorrent:latest
 ```
 
 For rtorrent 0.9.4 version: \
-\
+
 ```bash
 docker run -d --name=rutorrent \
 -v /share/Container/rutorrent-docker/config:/config \
